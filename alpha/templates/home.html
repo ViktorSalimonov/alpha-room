@@ -1,10 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Alpha Project</title>
-</head>
-<body>
-Welcome to Alpha Project
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">Alpha-Room Project</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main role="main" class="inner cover">
+            <h1 class="cover-heading">Alpha-Room Welcome Page</h1>
+            <p class="lead">Welcome to the development version of the Alpha-Room Project</p>
+            <p class="lead">
+                <a href="#" class="btn btn-lg btn-secondary">Join</a>
+            </p>
+        </main>
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>Software Development - Viktor Salimonov</p>
+            </div>
+        </footer>
+    </div>
+{% endblock %}
